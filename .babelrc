@@ -4,5 +4,9 @@
     "@babel/preset-react",
     ["@babel/preset-typescript", { "isTSX": true, "allExtensions": true }]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties", "@babel/plugin-transform-runtime"]
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
 }

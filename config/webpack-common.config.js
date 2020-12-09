@@ -13,7 +13,7 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.[jt]sx?$/, loader: 'babel-loader' },
+      { test: /\.(js|mjs|jsx|ts|tsx)?$/, loader: 'babel-loader' },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
@@ -43,7 +43,7 @@ module.exports = {
     new CaseSensitivePath(),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './src/index.html',
+      template: './public/index.html',
       minify: {
         removeComments: true,
         useShortDoctype: true,

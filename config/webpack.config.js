@@ -27,7 +27,7 @@ module.exports = merge(webpackCommonConfig, {
       }),
     ],
     splitChunks: {
-      chunks: 'all',
+      // chunks: 'all',
     },
   },
 });
