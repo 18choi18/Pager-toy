@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <ScrollToTop />
       <Switch>
-        <Route path="/search" component={SearchPage}></Route>
+        <Route path="/search" component={SearchPage} />
         <Redirect to="/search" />
       </Switch>
     </BrowserRouter>
